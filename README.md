@@ -34,6 +34,22 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=/{{your-vcpkg-path}}/vcpkg/scripts/buildsystems/
 protoc -I=./ --python_out=./ celeba.proto
 ```
 
+# Directory Structure
+
+```
+.
+├── addressbook_pb2.py
+├── addressbook.proto
+├── celeba_pb2.py
+├── celeba.proto
+├── celeba_write.cc
+├── CMakeLists.txt
+├── list_bbox_celeba.csv
+├── read.cc
+├── read_csv.py
+├── README.md
+└── write.cc
+```
 # Run
-1.
-2.
+1. cd build && ./celeba_write
+2. python read_csv.py
